@@ -1,0 +1,63 @@
+$primaryBlue: #37b5ed;
+$lightBlue: #c3ebfd;
+$lightGray: #dedfe7;
+$darkGray: #969696;
+
+a:visited,
+a:active,
+a,
+a:hover {
+  color: $primaryBlue;
+  text-decoration: none;
+}
+.title {
+  font-size: 1.2rem;
+}
+.center {
+  text-align: center;
+}
+.l-blue {
+  color: $lightBlue;
+}
+.blue {
+  color: $primaryBlue;
+}
+.gray {
+  color: $lightGray;
+}
+.d-gray {
+  color: $darkGray;
+}
+.thin {
+  font-weight: lighter;
+}
+.d-flex {
+  display: flex;
+}
+.s-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+%m-width {
+  max-width: 540px;
+  padding: 0 1.5rem;
+}
+@mixin placeholder($color) {
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
+    color: $color;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+}
